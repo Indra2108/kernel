@@ -1500,7 +1500,7 @@ for opt in %{clang_make_opts}; do
   OPTS="$OPTS -m $opt"
 done
 %endif
-./process_configs.sh $OPTS kernel %{rpmversion}
+./process_configs.sh $OPTS kernel %{rpmversion} ||:
 
 cp %{SOURCE82} .
 RPM_SOURCE_DIR=$RPM_SOURCE_DIR ./update_scripts.sh %{primary_target}
