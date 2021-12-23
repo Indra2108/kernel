@@ -1,2 +1,9 @@
 # This file is intentionally left empty in the stock kernel. Its a nicety
 # added for those wanting to do custom rebuilds with altered config opts.
+CONFIG_ASHMEM=y
+CONFIG_ANDROID=y
+CONFIG_ANDROID_BINDER_IPC=y
+CONFIG_ANDROID_BINDER_DEVICES="binder,hwbinder,vndbinder"
+CONFIG_STAGING=y
+CONFIG_ANDROID_BINDERFS=n
+CONFIG_ANDROID_BINDER_IPC_SELFTEST=n
